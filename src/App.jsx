@@ -1,15 +1,15 @@
+import React from "react";
+import {RouterProvider} from "react-router-dom";
+import {router} from "./routes";
 import "./App.css";
-import Home from "./Components/Home/Home";
-import Login from "./Components/Login/Login";
+
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <Home/>
-        <Login/>
-      </div>
-    </>
+    
+      
+      <RouterProvider router={router} />
+    
   );
 }
 
