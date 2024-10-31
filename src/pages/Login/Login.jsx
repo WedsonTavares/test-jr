@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -16,7 +15,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(login({ username }));
-    navigate('/Home'); 
+    navigate('/home'); // Redireciona para a página Home
   };
 
   return (
